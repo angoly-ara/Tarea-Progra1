@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1743116977 source:c:\users\enrique\desktop\progra1\tarea-progra1\partidospoliticoslibrerias\main.cpp
+	<iostream>
+	"Elecciones.h"
+
+1743116911 c:\users\enrique\desktop\progra1\tarea-progra1\partidospoliticoslibrerias\include\elecciones.h
+	<string>
+
+1743117083 source:c:\users\enrique\desktop\progra1\tarea-progra1\partidospoliticoslibrerias\src\elecciones.cpp
+	"Elecciones.h"
+	<iostream>
+	<cstdlib>
+	<ctime>
+
