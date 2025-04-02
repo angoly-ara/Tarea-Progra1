@@ -210,36 +210,53 @@
 	<sstream>
 	<iostream>
 
-1742705689 source:c:\users\enrique\desktop\progra1\tarea-progra1\buscaminas\main.cpp
+1743393660 source:c:\users\enrique\desktop\progra1\tarea-progra1\buscaminas\main.cpp
 	<iostream>
+	<vector>
+	<algorithm>
 	<unistd.h>
 	"Juego.h"
 	"Config.h"
+	"Jugador.h"
 
-1742705689 c:\users\enrique\desktop\progra1\tarea-progra1\buscaminas\include\juego.h
+1743392127 c:\users\enrique\desktop\progra1\tarea-progra1\buscaminas\include\juego.h
 	"Tablero.h"
+	<string>
 
 1742705689 c:\users\enrique\desktop\progra1\tarea-progra1\buscaminas\include\tablero.h
 	<iostream>
 	<vector>
 	"Celda.h"
 
-1742951526 c:\users\enrique\desktop\progra1\tarea-progra1\buscaminas\include\celda.h
+1742705689 c:\users\enrique\desktop\progra1\tarea-progra1\buscaminas\include\celda.h
 
-1742705689 c:\users\enrique\desktop\progra1\tarea-progra1\buscaminas\include\config.h
+1743393338 c:\users\enrique\desktop\progra1\tarea-progra1\buscaminas\include\config.h
+	<vector>
+	"Jugador.h"
 
-1742705689 source:c:\users\enrique\desktop\progra1\tarea-progra1\buscaminas\src\config.cpp
+1742705689 source:c:\users\enrique\desktop\progra1\tarea-progra1\buscaminas\src\celda.cpp
+	"Celda.h"
+	<iostream>
+
+1743393361 source:c:\users\enrique\desktop\progra1\tarea-progra1\buscaminas\src\config.cpp
 	<iostream>
 	<unistd.h>
 	"Config.h"
 
-1742705689 source:c:\users\enrique\desktop\progra1\tarea-progra1\buscaminas\src\juego.cpp
+1743392094 source:c:\users\enrique\desktop\progra1\tarea-progra1\buscaminas\src\juego.cpp
 	"Juego.h"
+	<iostream>
 	<fstream>
 	<unistd.h>
 
-1742705689 source:c:\users\enrique\desktop\progra1\tarea-progra1\buscaminas\src\tablero.cpp
+1743391557 source:c:\users\enrique\desktop\progra1\tarea-progra1\buscaminas\src\tablero.cpp
 	"Tablero.h"
 	<sstream>
 	<iostream>
+
+1743392404 source:c:\users\enrique\desktop\progra1\tarea-progra1\buscaminas\src\jugador.cpp
+	"Jugador.h"
+
+1743390360 c:\users\enrique\desktop\progra1\tarea-progra1\buscaminas\include\jugador.h
+	<string>
 

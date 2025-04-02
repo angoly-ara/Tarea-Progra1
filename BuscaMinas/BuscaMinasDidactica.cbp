@@ -36,11 +36,13 @@
 		</Compiler>
 		<Unit filename="include/Config.h" />
 		<Unit filename="include/Juego.h" />
+		<Unit filename="include/Jugador.h" />
 		<Unit filename="include/Tablero.h" />
 		<Unit filename="include/celda.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/Config.cpp" />
 		<Unit filename="src/Juego.cpp" />
+		<Unit filename="src/Jugador.cpp" />
 		<Unit filename="src/Tablero.cpp" />
 		<Unit filename="src/celda.cpp" />
 		<Extensions>

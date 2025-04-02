@@ -1,7 +1,10 @@
 #include <iostream>
+#include <vector>
+#include <algorithm>
 #include <unistd.h>
 #include "Juego.h"
 #include "Config.h"
+#include "Jugador.h"
 
 using namespace std;
 
@@ -13,7 +16,7 @@ int main()
     const bool MODODESARROLLADOR = true;
     const int VIDASTABLERO = 3;
     Config configuracionJuego(FILASTABLERO, COLUMNASTABLERO, MINASENTABLERO, MODODESARROLLADOR, VIDASTABLERO);
-    Juego juego(Tablero(configuracionJuego.getfilasTablero(), configuracionJuego.getcolumnasTablero(), configuracionJuego.getmodoDesarrolladorTablero()), configuracionJuego.getminasTablero());
+    vector<Jugador> jugadores;
     srand(getpid());
     int opciones;
     bool repetir = true;
@@ -31,21 +34,35 @@ int main()
         {
         case 1:
             {
-                configuracionJuego.menuConfiguracion();
+                configuracionJuego.menuConfiguracion(jugadores);  // Pasamos jugadores aquí para mostrar la lista
                 break;
             }
         case 2:
             {
-              	Juego juegoTemporal(Tablero(configuracionJuego.getfilasTablero(), configuracionJuego.getcolumnasTablero(), configuracionJuego.getmodoDesarrolladorTablero()), configuracionJuego.getminasTablero());
+                string nombreJugador;
+                cout << "Ingrese su nombre: ";
+                cin >> nombreJugador;
+                Jugador jugador(nombreJugador);
+                jugadores.push_back(jugador);
+
+                // Se agrega el nombreJugador en la llamada al constructor
+                Juego juegoTemporal(Tablero(configuracionJuego.getfilasTablero(),
+                                            configuracionJuego.getcolumnasTablero(),
+                                            configuracionJuego.getmodoDesarrolladorTablero()),
+                                    configuracionJuego.getminasTablero(),
+                                    nombreJugador);
                 juegoTemporal.iniciar();
 
                 system("pause");
                 break;
             }
-        case 3: repetir = false;
-                break;
-        }
+        case 3:
+            repetir = false;
+            break;
+            }
+
     } while (repetir);
     system("cls");
     return 0;
 }
+
